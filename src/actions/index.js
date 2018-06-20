@@ -1,8 +1,6 @@
-import { ADD_REMINDER, DELETE_REMINDER, CLEAR_REMINDERS } from '../constants';
-
 export const addReminder = (text, dueDate) => {
   const action = {
-    type: ADD_REMINDER,
+    type: 'ADD_REMINDER',
     text,
     dueDate
   };
@@ -12,7 +10,7 @@ export const addReminder = (text, dueDate) => {
 
 export const deleteReminder = id => {
   const action = {
-    type: DELETE_REMINDER,
+    type: 'DELETE_REMINDER',
     id
   };
   console.log('deleteing in actions', action);
@@ -21,6 +19,6 @@ export const deleteReminder = id => {
 
 export const clearReminders = () => {
   return {
-    type: CLEAR_REMINDERS
+    type: 'CLEAR_REMINDERS'
   }
 }
