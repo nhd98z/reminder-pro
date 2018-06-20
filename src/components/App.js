@@ -61,7 +61,7 @@ class App extends Component {
             <input className="form-control" placeholder="Mua sữa..." onChange={event => this.setState({ text: event.target.value })} />
             <input className="form-control" type="datetime-local" onChange={event => this.setState({ dueDate: event.target.value })} />
           </div>
-          <button type="button" className="btn btn-success" onClick={() => this.addReminder()}>
+          <button type="button" className="btn btn-success text-center" onClick={() => this.addReminder()}>
             Thêm lời nhắc
           </button>
         </div>
